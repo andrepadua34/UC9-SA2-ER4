@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Titillium+Web:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #000000;
+    height: 200px;
+}
+.logo{
+    height: 200px;
+}
+.container-grid{
+    width: 1750px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+.menu{
+    width: 150%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    height: 450px;
+    background-image: url(../img/banner_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.posicao-texto{
+    justify-content: flex-end;
+}
+.texto-banner h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+} 
+.texto-banner{
+    width: 495px;
+    color: aqua;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.texto-banner a{
+    background-color: rgb(11, 184, 20);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+    }
+    .texto-banner p{
+        margin-bottom: 50px;
+    }
+
+    #carrosel img{
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-ativo{
+        display: flex;
+    }
+
+.jogos-secao{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+}
+.tipo-jogo h3{
+    color: white;
+    text-transform: uppercase;
+}    
+    .secao-destaque{
+        background-image: url(../img/fundopromocao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .texto-destaque{
+        color: rgb(236, 13, 188);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .texto-destaque p{
+        font-size: 25px;
+        font-style: oblique;
+        font-stretch: expanded;
+    }
+    .texto-destaque h2{
+        font-size: 60px;
+    }
+    .barras{
+        width: 50px;
+        display: none;
+    }
+    .posicionamento-header{
+        position: relative;
+    }
+    .secao-online{
+        background-color: black;
+        height: 120px;
+        object-fit: contain;
+    }
+    .partidas-geral{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .game-atual{
+        width: 450px;
+    }
+    .game-embreve{
+        width: 550px;
+    }
+    .game-atual, .game-embreve{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+    .partidas-geral h2{
+        text-transform: uppercase;
+        font-size: 35px;
+    }    
+    .partida{
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .partida p{
+        font-size: 25px;
+        margin-bottom: 0%;
+        margin-left: 10px;
+    }
+    .pais1, .pais2{
+        display: flex;
+        align-items: center;
+    }
+    .partida img{
+        width: 45px;
+    }
+    .pais1 img{
+        margin-left: 15px;
+    }
+    .pais2 img{
+        margin-left: 15px;
+    }
+    .secao-noticias{
+        background-color: black;
+        padding: 10px;
+               
+    }
+    .secao-noticias .container{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    .bloco-noticias{
+        width: 70%;
+        height: 90%;
+        color: white
+    }
+    .bloco-noticias{
+        font-size: 25px;
+    }
+    .content-news{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .content-news img{
+        height: 150px;
+        width: 100%;        
+    }
+    .cardnews{
+        width: 320px;
+        height: 360px;
+        color: white; 
+        margin-bottom: 32px;
+        background: var(--gradient);
+        box-shadow: 0px 0px 10px black, 0px 0px 30px white;
+    }
+    .cardnews h3{
+        font-size: 35px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+    .cardnews p{
+        font-size: 16px;
+        padding-left: 16px;
+    }
+    .next-games{
+        width: 25%;
+        
+    }
+    .next-games h2{
+        font-size: 35px;
+        color: white;
+        margin-bottom: 25px;
+    }
+    .next-games-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        padding: 16px;
+        background: var(--gradient);
+        box-shadow: 0px 0px 10px black, 0px 0px 30px white;
+    }
+    .next-games-match{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-weight: 700;
+    }
+    .teams{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .next-games-match img{
+        max-width: 16px;
+    }
+    .next-games-match p{
+        margin-top: 16px;
+    }
+    .next-games-match div{
+        display: flex;
+        align-items: center;
+    }
+    footer{
+        background-color: black;
+    }
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+    .links{
+        color: white;
+    }
+    .links img{
+        height: 15px;
+    }
+    .links a{
+        color: white;
+        font: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .links-footer{
+      display: flex;  
+      justify-content: space-between;
+      width: 650px;
+    }
+    .logo-rodape{
+        width: 450px;
+    }
+    .sociais h2{
+        color: white;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .atencao img{
+        height: 25px;
+    }
+    .sociais input[type="email"]{
+        height: 36px;
+        width: 190px;
+    }
+    .sociais input[type="email"]::placeholder{
+        color: #b8b3b3;
+        font-weight: bold;
+    }
+    button {
+        width: 125px;
+        color: white;
+        background-color: blue;
+        border: navajowhite;
+        font-size: 22px;
+    }
+    .atencao{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 6px;
+    }
+    @media screen and (max-width: 1200px){
+        .container-grid{
+            width: 90%;
+        }
+        .menu a{
+            font-size: 16px;   
+        }
+        .logo{
+            width: 200px;
+        }
+    } 
+    @media screen and (max-width: 768px) {
+        h1{
+            color: blue;
+        }
+        .barras{
+            display: inline-block;
+        }
+        .menu{
+            display: none;
+            flex-direction: column;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 20px;
+            right: 60px;
+            background-color: black;
+        }
+        .menu a{
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu-ativo{
+            display: flex;
+        }
+    }
